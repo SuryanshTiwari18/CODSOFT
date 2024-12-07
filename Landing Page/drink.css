@@ -1,0 +1,182 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+}
+body{
+    font-family: Arial, sans-serif;
+    color: white;
+    background: linear-gradient(to right, #111 0%,#111 60%, rgb(255, 94, 0) 60%, rgb(255, 145, 0) 100%);
+    display: flex;
+    flex-direction: column;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    padding: 50px 110px;
+}
+.navbar .brand{
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: -30px 0 0 0;
+    color: #f90;
+}
+.navbar .nav-links{
+    list-style: none;
+    display: flex;
+    gap: 90px;
+    margin-left: 100px;
+    
+}
+.navbar .nav-links a{
+    text-decoration: none;
+    color: white;
+    font-size: 1em;
+    font-weight: 500;
+    position: relative;
+    display: inline-block;
+    transition: color 0.3s ease-in-out;
+}
+.navbar .nav-links a:hover{
+    color: #f90;
+}
+.navbar .nav-links a::before{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: #f90;
+    bottom: -3px;
+    left: 0;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+}
+.navbar .nav-links a:hover::before{
+    width: 100%;
+    visibility: visible;
+}
+.nav-links li .log-btn{
+    border: 1px solid white;
+    padding: 10px 30px;
+    border-radius: 20px;
+    font-weight: 750;
+    transition: 0.3s;
+    margin-left: 610px;
+}
+.navbar .log-btn:hover{
+    background-color: white;
+    color: #f90;
+}
+
+.container{
+    flex:1;
+    display: flex;
+    padding: 30px 110px;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+.left-section{
+    width: 35%;
+}
+.left-section h1{
+    font-size: 3em;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.left-section p{
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+.learn-btn{
+    background-color: rgb(255, 72, 0);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1em;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.learn-btn:hover{
+    background-color: rgb(245, 9, 9);
+    color: white;
+}
+.center-section{
+    width: 65%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 15%;
+    overflow: hidden;
+}
+.energy-can{
+    width: 120%;
+    height: auto;
+    position: absolute;
+    right: -25%;
+    top: 45%;
+    transform: translateY(-50%);
+    z-index: -1;
+}
+.right-section{
+    width: 15%;
+    position: relative;
+    z-index: 1;
+}
+.drink-item{
+    width: 300px;
+    margin-bottom: 20px;
+}
+.drink-item h3{
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    margin-top: 30px;
+}
+.drink-item p{
+    font-size: 0.9em;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    opacity: 0.8;
+}
+.footer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgba(17, 17, 17, 0.5);
+    padding: 20px 0;
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(10px);
+}
+.footer-item {
+    display: flex;
+    align-items: center; 
+    color: white;
+}
+.number {
+    font-size: 2.5em; 
+    color: orange;
+    margin-right: 10px; 
+}
+.vertical {
+    border-left: 3px solid orange;
+    height: 60px;
+    margin-right: 10px;
+}
+.text {
+    text-align: left;
+}
+.text h3 {
+    font-size: 1.2em; 
+    margin: 0;
+}
+.text p {
+    font-size: 0.9em;
+    color: #d3d3d3; 
+    margin: 5px 0 0;
+    max-width: 200px; 
+}
